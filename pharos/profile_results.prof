@@ -1,0 +1,784 @@
+         33898720 function calls (31308271 primitive calls) in 1594.297 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       21    0.001    0.000 4105.943  195.521 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:194(close)
+    56/21    0.001    0.000 3910.987  186.237 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:150(close)
+       21    0.000    0.000 3910.955  186.236 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:187(stop)
+       21    0.024    0.001 3910.954  186.236 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1117(join)
+       21    0.000    0.000 3900.470  185.737 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1155(_wait_for_tstate_lock)
+       16    0.000    0.000 1741.027  108.814 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:890(save)
+       16    0.002    0.000 1674.406  104.650 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:783(__exit__)
+       16 1388.787   86.799 1674.403  104.650 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:1120(_save)
+   132/89    0.001    0.000  790.629    8.883 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/record_writer.py:192(flush)
+   132/89    0.002    0.000  790.624    8.883 {method 'flush' of '_io.BufferedWriter' objects}
+112500/112453    0.227    0.000  784.000    0.007 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:406(_send_bytes)
+  330/285    0.001    0.000  780.055    2.737 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:182(send_bytes)
+   131/83    0.000    0.000  585.061    7.049 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:65(flush)
+    31/21    0.000    0.000  585.060   27.860 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:187(flush)
+    67/42    0.000    0.000  585.060   13.930 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:141(flush)
+    71/69    0.000    0.000  390.148    5.654 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:174(close)
+   101/69    0.000    0.000  390.148    5.654 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:376(_close)
+   161/69    0.002    0.000  390.148    5.654 {built-in method posix.close}
+        2    0.000    0.000  285.614  142.807 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:743(save)
+        1    0.000    0.000  194.948  194.948 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:188(run)
+     6204    0.204    0.000  128.225    0.021 /home/ayanami/code/pharos-HARL/harl/envs/env_wrappers.py:287(step_async)
+    12052    0.123    0.000  111.501    0.009 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_contextlib.py:113(decorate_context)
+608736/46524    0.899    0.000  109.770    0.002 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:1735(_wrapped_call_impl)
+608736/46524    1.513    0.000  109.648    0.002 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:1743(_call_impl)
+    37224    0.531    0.000  102.824    0.003 /home/ayanami/code/pharos-HARL/harl/models/policy_models/stochastic_policy.py:55(forward)
+     5000    0.358    0.000   89.318    0.018 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:303(collect)
+    37224    0.157    0.000   74.449    0.002 /home/ayanami/code/pharos-HARL/harl/models/base/act.py:44(forward)
+    30000    0.094    0.000   71.828    0.002 /home/ayanami/code/pharos-HARL/harl/algorithms/actors/on_policy_base.py:52(get_actions)
+    39224    2.144    0.000   41.238    0.001 /home/ayanami/code/pharos-HARL/harl/models/base/distributions.py:86(forward)
+    39224    0.262    0.000   37.004    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/normal.py:53(__init__)
+   129808   36.312    0.000   36.312    0.000 {method 'cpu' of 'torch._C.TensorBase' objects}
+    39224   31.771    0.001   35.145    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/distribution.py:41(__init__)
+     7224    0.022    0.000   31.579    0.004 /home/ayanami/code/pharos-HARL/harl/algorithms/actors/on_policy_base.py:98(act)
+     6204    0.151    0.000   28.277    0.005 /home/ayanami/code/pharos-HARL/harl/envs/env_wrappers.py:127(step)
+   191122   23.193    0.000   23.193    0.000 {method 'to' of 'torch._C.TensorBase' objects}
+   114498    0.311    0.000   22.163    0.000 /home/ayanami/code/pharos-HARL/harl/utils/trans_tools.py:4(_t2n)
+       50    0.001    0.000   21.719    0.434 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:480(compute)
+    15050    0.743    0.000   21.505    0.001 /home/ayanami/code/pharos-HARL/harl/common/valuenorm.py:78(denormalize)
+       50    0.182    0.004   20.590    0.412 /home/ayanami/code/pharos-HARL/harl/common/buffers/on_policy_critic_buffer_ep.py:97(compute_returns)
+     6204    0.259    0.000   19.821    0.003 /home/ayanami/code/pharos-HARL/harl/envs/env_wrappers.py:292(step_wait)
+    39224    0.132    0.000   19.297    0.000 /home/ayanami/code/pharos-HARL/harl/models/base/distributions.py:27(log_probs)
+    39224    3.961    0.000   19.165    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/normal.py:80(log_prob)
+   112170    0.331    0.000   18.934    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:202(send)
+   112140    0.326    0.000   18.484    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:246(recv)
+       50    0.006    0.000   18.338    0.367 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_ma_runner.py:10(train)
+       50    0.408    0.008   16.843    0.337 /home/ayanami/code/pharos-HARL/harl/algorithms/actors/mappo.py:149(share_param_train)
+    30000    0.313    0.000   16.171    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/normal.py:70(sample)
+    30000   15.055    0.001   15.055    0.001 {built-in method torch.normal}
+     2000    0.349    0.000   13.977    0.007 /home/ayanami/code/pharos-HARL/harl/algorithms/actors/mappo.py:28(update)
+112470/112452    0.259    0.000   13.625    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:429(_recv_bytes)
+    44524    0.170    0.000   13.376    0.000 /home/ayanami/code/pharos-HARL/harl/models/base/mlp.py:64(forward)
+224940/224904    0.462    0.000   13.249    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:390(_recv)
+    39224   11.443    0.000   12.793    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/distribution.py:274(_validate_sample)
+224992/224956   12.579    0.000   12.578    0.000 {built-in method posix.read}
+    44524    0.061    0.000   10.558    0.000 /home/ayanami/code/pharos-HARL/harl/models/base/mlp.py:40(forward)
+    44524    0.575    0.000   10.308    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/container.py:248(forward)
+   133572    0.145    0.000    5.882    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/linear.py:124(forward)
+   133572    5.638    0.000    5.638    0.000 {built-in method torch._C._nn.linear}
+     2250    0.018    0.000    5.389    0.002 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_tensor.py:570(backward)
+     2250    0.017    0.000    5.370    0.002 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/__init__.py:242(backward)
+     2250    0.013    0.000    5.251    0.002 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/graph.py:814(_engine_run_backward)
+     2250    5.235    0.002    5.235    0.002 {method 'run_backward' of 'torch._C._EngineBase' objects}
+     2000    0.010    0.000    4.981    0.002 /home/ayanami/code/pharos-HARL/harl/algorithms/actors/on_policy_base.py:69(evaluate_actions)
+     2000    0.040    0.000    4.971    0.002 /home/ayanami/code/pharos-HARL/harl/models/policy_models/stochastic_policy.py:88(evaluate_actions)
+   133572    0.247    0.000    4.822    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/normalization.py:216(forward)
+   133572    0.349    0.000    4.455    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/functional.py:2889(layer_norm)
+   112470    4.404    0.000    4.405    0.000 {built-in method _pickle.loads}
+    93/21    0.032    0.000    4.325    0.206 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:637(wait)
+       20    0.256    0.013    4.217    0.211 /home/ayanami/code/pharos-HARL/harl/envs/pharos/utils/render.py:74(save_json)
+     5300    0.013    0.000    4.013    0.001 /home/ayanami/code/pharos-HARL/harl/algorithms/critics/v_critic.py:62(get_values)
+   133572    3.944    0.000    3.944    0.000 {built-in method torch.layer_norm}
+       21    0.557    0.027    3.939    0.188 /home/ayanami/miniconda3/envs/rl/lib/python3.12/json/__init__.py:120(dump)
+     5300    0.078    0.000    3.931    0.001 /home/ayanami/code/pharos-HARL/harl/models/value_function_models/v_net.py:48(forward)
+   112500    0.478    0.000    3.774    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/reduction.py:48(dumps)
+112500/112453    0.132    0.000    3.629    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:381(_send)
+112500/112453    3.464    0.000    3.475    0.000 {built-in method posix.write}
+  2457812    0.352    0.000    3.126    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/json/encoder.py:414(_iterencode)
+     2000    0.085    0.000    2.934    0.001 /home/ayanami/code/pharos-HARL/harl/models/base/act.py:104(evaluate_actions)
+3759530/2457740    1.135    0.000    2.774    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/json/encoder.py:278(_iterencode_list)
+  2457772    0.674    0.000    2.264    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/json/encoder.py:334(_iterencode_dict)
+   112516    2.165    0.000    2.249    0.000 {method 'dump' of '_pickle.Pickler' objects}
+   117672    2.053    0.000    2.053    0.000 {method 'all' of 'torch._C.TensorBase' objects}
+    62250    1.971    0.000    1.971    0.000 {method 'item' of 'torch._C.TensorBase' objects}
+    96998    0.130    0.000    1.930    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_tensor.py:33(wrapped)
+    89048    0.101    0.000    1.868    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/activation.py:132(forward)
+    89048    0.105    0.000    1.767    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/functional.py:1693(relu)
+    94748    1.668    0.000    1.668    0.000 {method 'pow' of 'torch._C.TensorBase' objects}
+    89048    1.626    0.000    1.626    0.000 {built-in method torch.relu}
+    15550    0.634    0.000    1.469    0.000 /home/ayanami/code/pharos-HARL/harl/common/valuenorm.py:38(running_mean_var)
+    39224    0.165    0.000    1.420    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/utils.py:24(broadcast_all)
+       50    0.014    0.000    1.410    0.028 /home/ayanami/code/pharos-HARL/harl/algorithms/critics/v_critic.py:159(train)
+    78448    1.410    0.000    1.410    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/constraints.py:355(check)
+      250    0.014    0.000    1.289    0.005 /home/ayanami/code/pharos-HARL/harl/algorithms/critics/v_critic.py:116(update)
+     2250    0.039    0.000    1.269    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:473(wrapper)
+    31029    0.527    0.000    1.234    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/shape_base.py:380(stack)
+6750/2250    0.064    0.000    1.224    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py:32(_no_grad_wrapper)
+     2250    0.030    0.000    1.173    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py:175(clip_grad_norm_)
+     2250    0.021    0.000    1.055    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:72(_use_grad)
+    39224    1.050    0.000    1.050    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/constraints.py:368(check)
+     2250    0.020    0.000    1.023    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/adam.py:210(step)
+    39224    0.313    0.000    1.006    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/functional.py:47(broadcast_tensors)
+   112500    0.527    0.000    0.987    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/reduction.py:38(__init__)
+     5000    0.345    0.000    0.905    0.000 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:360(insert)
+     2250    0.008    0.000    0.834    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:140(maybe_fallback)
+     2250    0.037    0.000    0.824    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/adam.py:809(adam)
+    12319    0.007    0.000    0.781    0.000 {built-in method builtins.next}
+    13500    0.705    0.000    0.774    0.000 /home/ayanami/code/pharos-HARL/harl/common/buffers/on_policy_actor_buffer.py:114(feed_forward_generator_actor)
+5009512/4991096    0.583    0.000    0.748    0.000 {built-in method builtins.isinstance}
+     2250    0.079    0.000    0.730    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/adam.py:485(_multi_tensor_adam)
+   144072    0.175    0.000    0.711    0.000 /home/ayanami/code/pharos-HARL/harl/utils/envs_tools.py:9(check)
+   565456    0.692    0.000    0.692    0.000 {built-in method numpy.asanyarray}
+    39224    0.654    0.000    0.654    0.000 {built-in method torch.sigmoid}
+    46900    0.618    0.000    0.618    0.000 {method 'clamp' of 'torch._C.TensorBase' objects}
+    39224    0.597    0.000    0.597    0.000 {built-in method torch.broadcast_tensors}
+    39224    0.595    0.000    0.595    0.000 {method 'log' of 'torch._C.TensorBase' objects}
+   131558    0.589    0.000    0.589    0.000 {method 'numpy' of 'torch._C.TensorBase' objects}
+   157122    0.554    0.000    0.554    0.000 {built-in method torch.from_numpy}
+   874580    0.545    0.000    0.545    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:1915(__getattr__)
+     2250    0.041    0.000    0.511    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py:40(_get_total_norm)
+   867468    0.493    0.000    0.493    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/json/encoder.py:224(floatstr)
+   608786    0.431    0.000    0.431    0.000 {built-in method torch._C._get_tracing_state}
+  2457845    0.401    0.000    0.401    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+   112553    0.388    0.000    0.388    0.000 {method 'update' of 'dict' objects}
+   114678    0.350    0.000    0.350    0.000 {method 'detach' of 'torch._C.TensorBase' objects}
+     2250    0.088    0.000    0.341    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py:111(_clip_grads_with_norm_)
+    87454    0.109    0.000    0.314    0.000 {built-in method builtins.all}
+     5000    0.071    0.000    0.311    0.000 /home/ayanami/code/pharos-HARL/harl/common/base_logger.py:43(per_step)
+    30000    0.177    0.000    0.294    0.000 /home/ayanami/code/pharos-HARL/harl/common/buffers/on_policy_actor_buffer.py:82(insert)
+     2250    0.006    0.000    0.292    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_compile.py:22(inner)
+     2250    0.010    0.000    0.285    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:738(_fn)
+      250    0.021    0.000    0.283    0.001 /home/ayanami/code/pharos-HARL/harl/algorithms/critics/v_critic.py:75(cal_value_loss)
+    60000    0.268    0.000    0.268    0.000 {method 'expand' of 'torch._C.TensorBase' objects}
+   102104    0.105    0.000    0.263    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/grad_mode.py:184(__init__)
+    48802    0.088    0.000    0.251    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/grad_mode.py:80(__enter__)
+     2250    0.071    0.000    0.251    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:939(zero_grad)
+     2250    0.210    0.000    0.210    0.000 {built-in method torch._foreach_norm}
+    48802    0.081    0.000    0.205    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/grad_mode.py:84(__exit__)
+    31250    0.012    0.000    0.204    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2608(parameters)
+     4500    0.025    0.000    0.199    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/profiler.py:757(__exit__)
+        2    0.000    0.000    0.197    0.098 /home/ayanami/code/pharos-HARL/harl/envs/env_wrappers.py:337(get_tracing_info)
+    31250    0.015    0.000    0.192    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2633(named_parameters)
+    15550    0.184    0.000    0.184    0.000 {built-in method torch.sqrt}
+    21732    0.177    0.000    0.177    0.000 {built-in method numpy.array}
+    31250    0.049    0.000    0.177    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2588(_named_members)
+    10000    0.175    0.000    0.175    0.000 {method 'sum' of 'torch._C.TensorBase' objects}
+     4500    0.008    0.000    0.172    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_ops.py:946(__call__)
+    44628    0.166    0.000    0.166    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+   224640    0.155    0.000    0.155    0.000 {method 'getbuffer' of '_io.BytesIO' objects}
+    78708    0.039    0.000    0.154    0.000 <frozen abc>:117(__instancecheck__)
+   630703    0.153    0.000    0.153    0.000 {built-in method builtins.len}
+   212057    0.147    0.000    0.147    0.000 {method 'copy' of 'numpy.ndarray' objects}
+     2000    0.010    0.000    0.144    0.000 /home/ayanami/code/pharos-HARL/harl/models/base/distributions.py:30(entropy)
+     5036    0.020    0.000    0.142    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3735(mean)
+   224992    0.141    0.000    0.141    0.000 {method 'write' of '_io.BytesIO' objects}
+   157076    0.136    0.000    0.136    0.000 {method 'size' of 'torch._C.TensorBase' objects}
+   102104    0.131    0.000    0.131    0.000 {built-in method torch._C._set_grad_enabled}
+     4500    0.007    0.000    0.127    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_ops.py:1000(_must_dispatch_in_python)
+    11204    0.021    0.000    0.125    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:2589(all)
+     4500    0.015    0.000    0.125    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/profiler.py:751(__enter__)
+    30000    0.117    0.000    0.123    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/distribution.py:260(_extended_shape)
+     5036    0.063    0.000    0.123    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/_methods.py:118(_mean)
+     4500    0.008    0.000    0.119    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_pytree.py:1224(tree_any)
+      500    0.069    0.000    0.118    0.000 /home/ayanami/code/pharos-HARL/harl/utils/models_tools.py:64(huber_loss)
+     2250    0.073    0.000    0.115    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/adam.py:135(_init_group)
+   117672    0.062    0.000    0.115    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/utils.py:40(<genexpr>)
+    78708    0.114    0.000    0.114    0.000 {built-in method _abc._abc_instancecheck}
+     4501    0.008    0.000    0.111    0.000 {built-in method builtins.any}
+     4500    0.005    0.000    0.110    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_ops.py:1112(__call__)
+    48802    0.102    0.000    0.110    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/grad_mode.py:75(__init__)
+   133572    0.061    0.000    0.109    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/backends/__init__.py:38(__get__)
+    58000    0.054    0.000    0.106    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:101(_get_value)
+     4500    0.106    0.000    0.106    0.000 {built-in method torch._ops.profiler._record_function_enter_new}
+    11254    0.035    0.000    0.104    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:89(_wrapreduction_any_all)
+     2250    0.099    0.000    0.099    0.000 {built-in method torch._foreach_sqrt}
+     2250    0.032    0.000    0.096    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/__init__.py:88(_make_grads)
+     4500    0.095    0.000    0.095    0.000 {built-in method torch._foreach_mul_}
+31500/9000    0.033    0.000    0.094    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_pytree.py:917(tree_iter)
+    27408    0.017    0.000    0.090    0.000 {method 'sum' of 'numpy.ndarray' objects}
+     2750    0.088    0.000    0.088    0.000 {method 'mean' of 'torch._C.TensorBase' objects}
+     2250    0.044    0.000    0.087    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_tensor.py:1075(__rdiv__)
+    44524    0.047    0.000    0.087    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/container.py:240(__iter__)
+    48802    0.061    0.000    0.086    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_contextlib.py:154(__new__)
+     4500    0.084    0.000    0.084    0.000 {built-in method torch._foreach_add_}
+     2250    0.084    0.000    0.084    0.000 {built-in method torch.stack}
+   225756    0.084    0.000    0.084    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:135(_check_closed)
+   113487    0.083    0.000    0.083    0.000 {built-in method _struct.pack}
+135000/31000    0.071    0.000    0.082    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2775(named_modules)
+     4250    0.082    0.000    0.082    0.000 {built-in method torch.clamp}
+      500    0.064    0.000    0.081    0.000 /home/ayanami/code/pharos-HARL/harl/common/buffers/on_policy_critic_buffer_ep.py:202(feed_forward_generator_critic)
+   112470    0.080    0.000    0.080    0.000 {built-in method _struct.unpack}
+   368323    0.078    0.000    0.078    0.000 {method 'append' of 'list' objects}
+    39224    0.034    0.000    0.078    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_VF.py:27(__getattr__)
+     2250    0.078    0.000    0.078    0.000 {built-in method torch._C._linalg.linalg_vector_norm}
+     2000    0.042    0.000    0.075    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/normal.py:104(entropy)
+     1800    0.074    0.000    0.074    0.000 {built-in method torch.randperm}
+      500    0.022    0.000    0.074    0.000 /home/ayanami/code/pharos-HARL/harl/common/valuenorm.py:66(normalize)
+    27408    0.010    0.000    0.073    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/_methods.py:50(_sum)
+     4500    0.007    0.000    0.072    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_foreach_utils.py:43(_has_foreach_support)
+   112040    0.072    0.000    0.072    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/__init__.py:146(_DType_reduce)
+   112500    0.072    0.000    0.072    0.000 {method 'copy' of 'dict' objects}
+ 9078/714    0.012    0.000    0.072    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2824(train)
+   129442    0.071    0.000    0.071    0.000 {built-in method builtins.getattr}
+    78448    0.034    0.000    0.070    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/constraints.py:149(is_dependent)
+   156896    0.068    0.000    0.068    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/overrides.py:1961(is_tensor_like)
+    12052    0.019    0.000    0.067    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_contextlib.py:146(clone)
+       40    0.049    0.001    0.066    0.002 /home/ayanami/code/pharos-HARL/harl/envs/pharos/pharos_logger.py:25(eval_thread_done)
+     6750    0.005    0.000    0.066    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_foreach_utils.py:32(_group_tensors_by_device_and_dtype)
+   136222    0.064    0.000    0.064    0.000 {built-in method torch._C._has_torch_function}
+     2250    0.061    0.000    0.061    0.000 {built-in method torch._foreach_lerp_}
+     6750    0.061    0.000    0.061    0.000 {built-in method torch._C._group_tensors_by_device_and_dtype}
+   153156    0.061    0.000    0.061    0.000 {built-in method torch.is_grad_enabled}
+    16206    0.044    0.000    0.057    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/numeric.py:137(ones)
+       35    0.000    0.000    0.055    0.002 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/context.py:100(Queue)
+     2250    0.055    0.000    0.055    0.000 {built-in method torch._foreach_addcdiv_}
+   433475    0.054    0.000    0.054    0.000 {built-in method _json.encode_basestring_ascii}
+       35    0.000    0.000    0.054    0.002 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/queues.py:37(__init__)
+     2250    0.012    0.000    0.054    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:420(_cuda_graph_capture_health_check)
+     2250    0.054    0.000    0.054    0.000 {built-in method torch.ones_like}
+   133572    0.053    0.000    0.053    0.000 {built-in method torch._C._has_torch_function_variadic}
+     2000    0.053    0.000    0.053    0.000 {built-in method torch.min}
+     2250    0.002    0.000    0.053    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:507(_group_tensors_by_device_and_dtype)
+     5000    0.030    0.000    0.053    0.000 /home/ayanami/code/pharos-HARL/harl/common/buffers/on_policy_critic_buffer_ep.py:73(insert)
+      180    0.001    0.000    0.051    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:264(cpu)
+    39224    0.050    0.000    0.050    0.000 {built-in method math.sqrt}
+      180    0.050    0.000    0.050    0.000 {method 'copy_' of 'torch._C.StorageBase' objects}
+     2250    0.049    0.000    0.049    0.000 {built-in method torch._foreach_div_}
+       35    0.000    0.000    0.049    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:533(Pipe)
+       35    0.049    0.001    0.049    0.001 {built-in method posix.pipe}
+      250    0.012    0.000    0.048    0.000 /home/ayanami/code/pharos-HARL/harl/common/valuenorm.py:47(update)
+   133572    0.048    0.000    0.048    0.000 {built-in method torch._C._get_cudnn_enabled}
+     2000    0.048    0.000    0.048    0.000 {built-in method torch.prod}
+   195676    0.047    0.000    0.047    0.000 {method 'items' of 'dict' objects}
+    31029    0.018    0.000    0.046    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/shape_base.py:370(_stack_dispatcher)
+   117672    0.030    0.000    0.045    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/utils.py:45(<genexpr>)
+     2250    0.045    0.000    0.045    0.000 {built-in method torch._foreach_addcmul_}
+      294    0.002    0.000    0.044    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:459(add_scalars)
+     2250    0.043    0.000    0.043    0.000 {method 'reciprocal' of 'torch._C.TensorBase' objects}
+     4500    0.035    0.000    0.043    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_foreach_utils.py:39(_device_has_foreach_support)
+     9078    0.015    0.000    0.042    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:1932(__setattr__)
+    41224    0.042    0.000    0.042    0.000 {built-in method math.log}
+     2250    0.006    0.000    0.041    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:167(_default_to_fused_or_foreach)
+   376519    0.040    0.000    0.040    0.000 {built-in method builtins.id}
+      588    0.002    0.000    0.039    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/x2num.py:18(make_np)
+     2000    0.039    0.000    0.039    0.000 {built-in method torch.sum}
+     2000    0.038    0.000    0.038    0.000 {built-in method torch.exp}
+    91298    0.038    0.000    0.038    0.000 {built-in method torch._C._has_torch_function_unary}
+     4500    0.037    0.000    0.037    0.000 {built-in method torch._ops.profiler.}
+     2275    0.037    0.000    0.037    0.000 {built-in method torch.tensor}
+       50    0.000    0.000    0.037    0.001 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:737(prep_training)
+       52    0.000    0.000    0.037    0.001 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:731(prep_rollout)
+      364    0.000    0.000    0.036    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2846(eval)
+    18000    0.010    0.000    0.036    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_pytree.py:699(_is_leaf)
+   112816    0.035    0.000    0.035    0.000 {method 'getvalue' of '_io.BytesIO' objects}
+    31500    0.011    0.000    0.035    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_pytree.py:692(_get_node_type)
+     2000    0.032    0.000    0.032    0.000 {built-in method torch.log}
+      300    0.000    0.000    0.032    0.000 /home/ayanami/code/pharos-HARL/harl/algorithms/actors/on_policy_base.py:131(prep_training)
+      312    0.000    0.000    0.032    0.000 /home/ayanami/code/pharos-HARL/harl/algorithms/actors/on_policy_base.py:135(prep_rollout)
+      294    0.005    0.000    0.031    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/summary.py:137(scalar)
+     2250    0.003    0.000    0.030    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/cuda/__init__.py:116(is_available)
+    31029    0.016    0.000    0.028    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/shape_base.py:208(_arrays_for_stack_dispatcher)
+     5036    0.024    0.000    0.027    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/_methods.py:76(_count_reduce_items)
+        2    0.000    0.000    0.027    0.014 /home/ayanami/code/pharos-HARL/harl/envs/env_wrappers.py:317(close)
+     1554    0.027    0.000    0.027    0.000 {built-in method builtins.abs}
+    87025    0.016    0.000    0.026    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_tensor.py:1166(__hash__)
+    49697    0.025    0.000    0.025    0.000 {built-in method __new__ of type object at 0x937ea0}
+    73750    0.020    0.000    0.025    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/compiler/__init__.py:367(is_compiling)
+    66310    0.018    0.000    0.025    0.000 {method 'add' of 'set' objects}
+    51275    0.025    0.000    0.025    0.000 {method 'values' of 'dict' objects}
+    31250    0.025    0.000    0.025    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:184(<genexpr>)
+    72240    0.024    0.000    0.024    0.000 /home/ayanami/code/pharos-HARL/harl/envs/pharos/utils/render.py:60(to_dict)
+    31500    0.020    0.000    0.024    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_pytree.py:681(_is_namedtuple_instance)
+       30    0.000    0.000    0.024    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/process.py:142(join)
+     4500    0.013    0.000    0.024    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/profiler.py:740(__init__)
+       30    0.000    0.000    0.023    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/popen_fork.py:36(wait)
+       30    0.000    0.000    0.023    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/popen_fork.py:24(poll)
+       30    0.023    0.001    0.023    0.001 {built-in method posix.waitpid}
+   112500    0.023    0.000    0.023    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:143(_check_writable)
+   112863    0.023    0.000    0.023    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:139(_check_readable)
+      260    0.003    0.000    0.023    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/x2num.py:39(prepare_pytorch)
+     2250    0.004    0.000    0.023    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/cuda/__init__.py:112(_nvml_based_avail)
+    22411    0.021    0.000    0.021    0.000 {built-in method numpy.zeros}
+        2    0.021    0.011    0.021    0.011 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:517(eval)
+      294    0.002    0.000    0.021    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:314(__append_to_scalar_dict)
+      294    0.002    0.000    0.020    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:132(add_summary)
+18001/18000    0.019    0.000    0.019    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:392(inner)
+     4500    0.015    0.000    0.019    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:110(_maybe_set_eval_frame)
+   105196    0.019    0.000    0.019    0.000 {method 'keys' of 'dict' objects}
+    28750    0.013    0.000    0.019    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2658(<lambda>)
+     2250    0.002    0.000    0.019    0.000 <frozen os>:808(getenv)
+   198552    0.018    0.000    0.018    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_jit_internal.py:103(is_scripting)
+      356    0.014    0.000    0.018    0.000 {built-in method builtins.sum}
+     1204    0.014    0.000    0.017    0.000 /home/ayanami/code/pharos-HARL/harl/envs/pharos/pharos_logger.py:41(eval_per_step)
+    44574    0.017    0.000    0.017    0.000 {built-in method builtins.iter}
+    17442    0.006    0.000    0.017    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2719(children)
+     2250    0.004    0.000    0.017    0.000 <frozen _collections_abc>:804(get)
+    16204    0.016    0.000    0.016    0.000 {method 'transpose' of 'numpy.ndarray' objects}
+     5000    0.015    0.000    0.015    0.000 {method 'flatten' of 'numpy.ndarray' objects}
+     2000    0.015    0.000    0.015    0.000 {method 'squeeze' of 'torch._C.TensorBase' objects}
+    37096    0.015    0.000    0.015    0.000 {built-in method builtins.hasattr}
+     1000    0.014    0.000    0.014    0.000 {method 'float' of 'torch._C.TensorBase' objects}
+       51    0.000    0.000    0.014    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1160(__iter__)
+      330    0.003    0.000    0.014    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/queues.py:86(put)
+       50    0.000    0.000    0.014    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1198(update)
+      294    0.001    0.000    0.014    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:116(add_event)
+      878    0.002    0.000    0.014    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:2338(sum)
+       51    0.000    0.000    0.013    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1325(refresh)
+  330/312    0.001    0.000    0.013    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:208(recv_bytes)
+      294    0.000    0.000    0.013    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:132(add_event)
+     2250    0.008    0.000    0.013    0.000 <frozen os>:709(__getitem__)
+       52    0.000    0.000    0.013    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1464(display)
+     4500    0.009    0.000    0.012    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_pytree.py:466(_dict_flatten)
+      880    0.002    0.000    0.012    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:69(_wrapreduction)
+    62500    0.012    0.000    0.012    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_foreach_utils.py:44(<genexpr>)
+      750    0.011    0.000    0.011    0.000 {method 'mul_' of 'torch._C.TensorBase' objects}
+    17442    0.008    0.000    0.011    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2728(named_children)
+    16206    0.011    0.000    0.011    0.000 {built-in method numpy.empty}
+      329    0.000    0.000    0.011    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:51(write_event)
+       72    0.010    0.000    0.010    0.000 {built-in method _thread.start_new_thread}
+      329    0.001    0.000    0.010    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:60(_write_serialized_event)
+     4500    0.006    0.000    0.010    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_ops.py:1002(<lambda>)
+     6750    0.005    0.000    0.009    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_foreach_utils.py:8(_get_foreach_kernels_supported_devices)
+      588    0.003    0.000    0.009    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/x2num.py:11(check_nan)
+    31250    0.007    0.000    0.009    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/adam.py:857(<genexpr>)
+      329    0.001    0.000    0.009    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/record_writer.py:184(write)
+      750    0.008    0.000    0.008    0.000 {method 'add_' of 'torch._C.TensorBase' objects}
+    29000    0.008    0.000    0.008    0.000 {built-in method torch.is_complex}
+    36093    0.008    0.000    0.008    0.000 {built-in method numpy.lib.array_utils.normalize_axis_index}
+       52    0.000    0.000    0.008    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1150(__str__)
+       35    0.000    0.000    0.008    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/record_writer.py:43(directory_check)
+      439    0.001    0.000    0.008    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:394(notify)
+        3    0.000    0.000    0.008    0.003 /home/ayanami/code/pharos-HARL/harl/envs/env_wrappers.py:305(reset)
+    31740    0.008    0.000    0.008    0.000 {method 'get' of 'dict' objects}
+     2250    0.001    0.000    0.008    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/cuda/graphs.py:25(is_current_stream_capturing)
+       52    0.002    0.000    0.008    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:464(format_meter)
+     9078    0.005    0.000    0.008    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/parameter.py:10(__instancecheck__)
+       50    0.000    0.000    0.007    0.000 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:508(after_update)
+      300    0.002    0.000    0.007    0.000 /home/ayanami/code/pharos-HARL/harl/common/buffers/on_policy_actor_buffer.py:105(after_update)
+   104/35    0.000    0.000    0.007    0.000 <frozen os>:200(makedirs)
+      658    0.001    0.000    0.007    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/record_writer.py:199(masked_crc32c)
+     9078    0.005    0.000    0.007    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/parameter.py:216(__instancecheck__)
+     1230    0.007    0.000    0.007    0.000 {method 'release' of '_thread.lock' objects}
+     7224    0.005    0.000    0.007    0.000 /home/ayanami/code/pharos-HARL/harl/models/base/distributions.py:33(mode)
+       50    0.000    0.000    0.007    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1905(nanstd)
+       50    0.001    0.000    0.006    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:954(nanmean)
+      104    0.006    0.000    0.006    0.000 {built-in method posix.mkdir}
+     4408    0.001    0.000    0.006    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:1186(persistent_id)
+     2250    0.006    0.000    0.006    0.000 {built-in method torch._C._cuda_isCurrentStreamCapturing}
+       50    0.002    0.000    0.006    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1715(nanvar)
+     9000    0.006    0.000    0.006    0.000 {built-in method torch._C._get_privateuse1_backend_name}
+    45031    0.006    0.000    0.006    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/multiarray.py:180(concatenate)
+      156    0.000    0.000    0.006    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:378(disp_len)
+      658    0.001    0.000    0.005    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/crc32c.py:122(_crc32c)
+    11750    0.005    0.000    0.005    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+     4408    0.003    0.000    0.005    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:1136(persistent_id)
+      156    0.000    0.000    0.005    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:374(_text_width)
+      250    0.005    0.000    0.005    0.000 {built-in method torch.max}
+     2250    0.003    0.000    0.005    0.000 <frozen os>:791(encode)
+      658    0.005    0.000    0.005    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/crc32c.py:85(crc_update)
+       40    0.001    0.000    0.005    0.000 /home/ayanami/code/pharos-HARL/harl/common/base_logger.py:140(eval_thread_done)
+        1    0.000    0.000    0.004    0.004 /home/ayanami/code/pharos-HARL/harl/runners/on_policy_base_runner.py:287(warmup)
+       52    0.000    0.000    0.004    0.000 /home/ayanami/code/pharos-HARL/harl/algorithms/critics/v_critic.py:206(prep_rollout)
+       50    0.000    0.000    0.004    0.000 /home/ayanami/code/pharos-HARL/harl/algorithms/critics/v_critic.py:202(prep_training)
+      106    0.002    0.000    0.004    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/synchronize.py:50(__init__)
+       52    0.000    0.000    0.004    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:457(print_status)
+     9000    0.004    0.000    0.004    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_pytree.py:438(_tuple_flatten)
+      180    0.000    0.000    0.004    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_tensor.py:242(__reduce_ex__)
+       72    0.000    0.000    0.004    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:975(start)
+    15790    0.002    0.000    0.004    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:375(<genexpr>)
+       70    0.000    0.000    0.004    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/context.py:65(Lock)
+      180    0.002    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_tensor.py:291(_reduce_ex_internal)
+     2250    0.002    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/_foreach_utils.py:12(_get_fused_kernels_supported_devices)
+      393    0.001    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:351(register)
+     9388    0.003    0.000    0.003    0.000 {method 'values' of 'collections.OrderedDict' objects}
+       70    0.000    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/synchronize.py:168(__init__)
+        1    0.000    0.000    0.003    0.003 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:511(export_scalars_to_json)
+     2250    0.003    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:152(_callback_from_stance)
+       36    0.000    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/queues.py:175(_start_thread)
+       56    0.003    0.000    0.003    0.000 {built-in method _io.open}
+    10222    0.003    0.000    0.003    0.000 {built-in method builtins.issubclass}
+     4500    0.003    0.000    0.003    0.000 {built-in method torch._C._dynamo.eval_frame.set_eval_frame}
+       35    0.000    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:35(__init__)
+     2250    0.003    0.000    0.003    0.000 {built-in method torch._C._are_functorch_transforms_active}
+     2250    0.003    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/logging/__init__.py:1776(getEffectiveLevel)
+     2250    0.001    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/cuda/__init__.py:107(_is_compiled)
+      150    0.002    0.000    0.003    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:204(_divide_by_count)
+      393    0.001    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:234(register)
+       10    0.000    0.000    0.002    0.000 /home/ayanami/code/pharos-HARL/harl/common/base_logger.py:66(episode_log)
+   194/16    0.001    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2142(state_dict)
+       52    0.000    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:386(disp_trim)
+       52    0.000    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:451(fp_write)
+       10    0.000    0.000    0.002    0.000 /home/ayanami/code/pharos-HARL/harl/common/base_logger.py:164(log_train)
+    16356    0.002    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/multiarray.py:1098(copyto)
+     2250    0.001    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:109(_stack_if_compiling)
+    11204    0.002    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:2584(_all_dispatcher)
+      106    0.000    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:194(inner)
+     2250    0.002    0.000    0.002    0.000 {method 'numel' of 'torch._C.TensorBase' objects}
+      100    0.001    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:70(_replace_nan)
+     7224    0.002    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/distributions/normal.py:37(mean)
+        2    0.000    0.000    0.002    0.001 /home/ayanami/code/pharos-HARL/harl/envs/pharos/pharos_logger.py:99(eval_init)
+        2    0.000    0.000    0.002    0.001 /home/ayanami/code/pharos-HARL/harl/envs/env_wrappers.py:330(enable_tracing)
+       73    0.000    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:616(set)
+     2267    0.002    0.000    0.002    0.000 {method 'encode' of 'str' objects}
+       35    0.000    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:82(__init__)
+     2250    0.002    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/__init__.py:232(_tensor_or_tensors_to_tuple)
+    18156    0.002    0.000    0.002    0.000 {function _ParameterMeta.__instancecheck__ at 0x7fe967374680}
+       72    0.000    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:884(__init__)
+      102    0.000    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/util.py:208(__call__)
+      294    0.001    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/google/protobuf/message.py:432(__reduce__)
+     4500    0.002    0.000    0.002    0.000 {method '__exit__' of 'torch._C.DisableTorchFunctionSubclass' objects}
+      393    0.001    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:347(__init__)
+    15750    0.002    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:2187(cast)
+      139    0.000    0.000    0.002    0.000 <frozen genericpath>:16(exists)
+       35    0.000    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:88(__init__)
+       34    0.002    0.000    0.002    0.000 {built-in method builtins.print}
+        2    0.000    0.000    0.002    0.001 /home/ayanami/code/pharos-HARL/harl/envs/env_wrappers.py:355(reset_tracing)
+       73    0.000    0.000    0.002    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:424(notify_all)
+       10    0.000    0.000    0.001    0.000 /home/ayanami/code/pharos-HARL/harl/common/buffers/on_policy_critic_buffer_ep.py:93(get_mean_rewards)
+      139    0.001    0.000    0.001    0.000 {built-in method posix.stat}
+      106    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/synchronize.py:121(_make_name)
+    15634    0.001    0.000    0.001    0.000 {built-in method unicodedata.east_asian_width}
+      294    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/google/protobuf/message.py:422(__setstate__)
+       50    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_tensor.py:1144(__iter__)
+     2250    0.001    0.000    0.001    0.000 {built-in method torch._C._cuda_getDeviceCount}
+       35    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/record_writer.py:177(__init__)
+      588    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/numeric.py:1927(isscalar)
+       35    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/context.py:85(BoundedSemaphore)
+       36    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/queues.py:140(close)
+       35    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/record_writer.py:54(open_file)
+      294    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/summary.py:28(_clean_tag)
+       35    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/synchronize.py:151(__init__)
+     2250    0.001    0.000    0.001    0.000 {method 'extend' of 'list' objects}
+     1128    0.001    0.000    0.001    0.000 {method 'acquire' of '_multiprocessing.SemLock' objects}
+       40    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/_monitor.py:47(get_instances)
+      106    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/tempfile.py:153(__next__)
+        2    0.000    0.000    0.001    0.001 /home/ayanami/code/pharos-HARL/harl/common/base_logger.py:176(log_env)
+     2250    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/backends/cuda/__init__.py:38(is_built)
+      394    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:202(__exit__)
+      862    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:314(_is_owned)
+      194    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/nn/modules/module.py:2098(_save_to_state_dict)
+      294    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/google/protobuf/message.py:418(__getstate__)
+      532    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:302(__exit__)
+     4500    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/decorators.py:198(graph_break)
+       36    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/queues.py:224(_finalize_close)
+       16    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:804(_open_zipfile_writer)
+      113    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:85(add)
+       21    0.001    0.000    0.001    0.000 {method '__exit__' of '_io._IOBase' objects}
+     4500    0.001    0.000    0.001    0.000 {built-in method torch._C._dynamo.eval_frame.set_skip_guard_eval_unsafe}
+      450    0.001    0.000    0.001    0.000 {method 'sub' of 're.Pattern' objects}
+      393    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:215(_fileobj_lookup)
+       50    0.001    0.000    0.001    0.000 {method 'unbind' of 'torch._C.TensorBase' objects}
+       16    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:767(__init__)
+       50    0.001    0.000    0.001    0.000 {built-in method torch.zeros_like}
+      136    0.001    0.000    0.001    0.000 {method 'format' of 'str' objects}
+      141    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/util.py:174(register_after_fork)
+     5036    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3730(_mean_dispatcher)
+     2250    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:189(_is_skip_guard_eval_unsafe_stance)
+      394    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:268(close)
+       40    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:95(copy)
+      100    0.000    0.000    0.001    0.000 {method 'any' of 'numpy.generic' objects}
+      393    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:21(_fileobj_to_fd)
+      180    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:1219(_size)
+      180    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_tensor.py:285(_typed_storage)
+       40    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:37(__init__)
+     1036    0.001    0.000    0.001    0.000 {method '__exit__' of '_thread.lock' objects}
+      423    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:311(_acquire_restore)
+     4228    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/__init__.py:1116(is_storage)
+      106    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/random.py:454(choices)
+     4500    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_utils_internal.py:174(justknobs_check)
+      294    0.001    0.000    0.001    0.000 {method 'ParseFromString' of 'google._upb._message.Message' objects}
+     4500    0.001    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/jit/__init__.py:128(annotate)
+      249    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/copyreg.py:107(_slotnames)
+     1129    0.001    0.000    0.001    0.000 {method 'release' of '_multiprocessing.SemLock' objects}
+      532    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:299(__enter__)
+      163    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:63(__iter__)
+       40    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:120(update)
+      435    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:645(parent)
+      294    0.001    0.000    0.001    0.000 {method 'SerializePartialToString' of 'google._upb._message.Message' objects}
+       35    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:168(__init__)
+    386/2    0.080    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/queues.py:98(get)
+    414/1    0.043    0.000    0.001    0.001 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:323(wait)
+      150    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/_ufunc_config.py:440(__enter__)
+      393    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:209(__init__)
+      141    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/weakref.py:164(__setitem__)
+       50    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:2477(any)
+       51    0.001    0.000    0.001    0.000 {built-in method now}
+       36    0.000    0.000    0.001    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:72(close)
+      540    0.000    0.000    0.000    0.000 {method 'nbytes' of 'torch._C.StorageBase' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:952(__init__)
+       55    0.000    0.000    0.000    0.000 <frozen posixpath>:71(join)
+   2581/6    0.020    0.000    0.000    0.000 {method 'acquire' of '_thread.lock' objects}
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:660(location_tag)
+      329    0.000    0.000    0.000    0.000 {method 'SerializeToString' of 'google._upb._message.Message' objects}
+      393    0.000    0.000    0.000    0.000 <string>:1(<lambda>)
+      103    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:400(format_interval)
+    386/2    0.146    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:253(poll)
+     1350    0.000    0.000    0.000    0.000 {built-in method time.time}
+      696    0.000    0.000    0.000    0.000 {method 'popleft' of 'collections.deque' objects}
+       75    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:102(acquire)
+      104    0.000    0.000    0.000    0.000 <frozen posixpath>:100(split)
+       50    0.000    0.000    0.000    0.000 /home/ayanami/code/pharos-HARL/harl/common/buffers/on_policy_critic_buffer_ep.py:86(after_update)
+    386/2    0.022    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:439(_poll)
+    386/2    0.094    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:1122(wait)
+      100    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/_methods.py:58(_any)
+      932    0.000    0.000    0.000    0.000 {method 'squeeze' of 'numpy.ndarray' objects}
+      566    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+      360    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:782(__init__)
+     1974    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/record_writer.py:204(u32)
+      104    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:273(_is_ascii)
+       52    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1446(format_dict)
+      108    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:277(__init__)
+     1316    0.000    0.000    0.000    0.000 {method 'write' of '_io.BufferedWriter' objects}
+     2250    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:459(_optimizer_step_code)
+      394    0.000    0.000    0.000    0.000 {method 'clear' of 'dict' objects}
+       75    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:106(release)
+       83    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:27(__exit__)
+       35    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/queues.py:71(_reset)
+       36    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/record_writer.py:195(close)
+       73    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:588(__init__)
+     1173    0.000    0.000    0.000    0.000 {built-in method time.monotonic}
+       72    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1045(_set_tstate_lock)
+       16    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+       73    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1108(_delete)
+       21    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/json/encoder.py:205(iterencode)
+      532    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.lock' objects}
+      299    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:231(__call__)
+      423    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:308(_release_save)
+      330    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:275(_key_from_fd)
+       36    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedWriter' objects}
+      360    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:690(__new__)
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:1099(_element_size)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1265(close)
+       72    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/util.py:189(__init__)
+       21    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:760(get_lock)
+      435    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+      789    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+      144    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/weakref.py:105(remove)
+      345    0.000    0.000    0.000    0.000 {built-in method posix.getpid}
+       52    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:186(__format__)
+      150    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/_ufunc_config.py:456(__exit__)
+      3/2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:515(__getitem__)
+      393    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:169(fileno)
+      393    0.000    0.000    0.000    0.000 {method 'register' of 'select.poll' objects}
+      294    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:112(get_logdir)
+       50    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:115(_copyto)
+      358    0.000    0.000    0.000    0.000 {built-in method math.ceil}
+      150    0.000    0.000    0.000    0.000 {built-in method numpy._core._multiarray_umath._make_extobj}
+    393/3    0.004    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:402(select)
+      260    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/autograd/variable.py:10(__instancecheck__)
+      294    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:325(_check_caffe2_blob)
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_utils.py:189(get_tensor_metadata)
+      393    0.000    0.000    0.000    0.000 {built-in method select.poll}
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:542(_backend_tag)
+      878    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:2333(_sum_dispatcher)
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_utils.py:855(_element_size)
+      106    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/tempfile.py:142(rng)
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_utils.py:466(_get_obj_state)
+      132    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:131(__del__)
+      102    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:39(_remove)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:90(__init__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:747(Optional)
+      423    0.000    0.000    0.000    0.000 {method 'remove' of 'collections.deque' objects}
+       82    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:53(_commit_removals)
+      393    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:63(__init__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:116(create_mp_lock)
+       38    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1081(_stop)
+       24    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:110(__enter__)
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_namedtensor_internals.py:12(check_serializing_named_tensor)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/context.py:70(RLock)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:663(__new__)
+       30    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/util.py:466(close_fds)
+      848    0.000    0.000    0.000    0.000 {method 'random' of '_random.Random' objects}
+      141    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/weakref.py:352(__init__)
+       52    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:153(__init__)
+      141    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/weakref.py:347(__new__)
+       72    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1038(_set_ident)
+      150    0.000    0.000    0.000    0.000 {method 'reset' of '_contextvars.ContextVar' objects}
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:694(Union)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/synchronize.py:193(__init__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/_monitor.py:30(__init__)
+      150    0.000    0.000    0.000    0.000 {method 'set' of '_contextvars.ContextVar' objects}
+      658    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/crc32c.py:108(crc_finalize)
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:527(_cpu_tag)
+      159    0.000    0.000    0.000    0.000 <frozen posixpath>:41(_get_sep)
+       24    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:113(__exit__)
+      295    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/comet_utils.py:28(wrapper)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_ops.py:1054(__getattr__)
+      294    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:340(_get_file_writer)
+      294    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+      144    0.000    0.000    0.000    0.000 {built-in method _weakref._remove_dead_weakref}
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3052(max)
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:79(size)
+      146    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1236(daemon)
+      540    0.000    0.000    0.000    0.000 {method 'data_ptr' of 'torch._C.StorageBase' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1575(_shutdown)
+       35    0.000    0.000    0.000    0.000 {built-in method _socket.gethostname}
+     1092    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+      394    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/util.py:48(debug)
+       74    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1485(current_thread)
+      132    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
+       83    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:21(__enter__)
+      249    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/_monitor.py:53(run)
+        5    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:175(_type_check)
+      220    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+      848    0.000    0.000    0.000    0.000 {built-in method math.floor}
+       16    0.000    0.000    0.000    0.000 {built-in method torch._C._log_api_usage_once}
+      180    0.000    0.000    0.000    0.000 {built-in method torch._C._has_storage}
+      180    0.000    0.000    0.000    0.000 {built-in method torch._C._get_tensor_metadata}
+      180    0.000    0.000    0.000    0.000 {method 'untyped_storage' of 'torch._C.TensorBase' objects}
+      180    0.000    0.000    0.000    0.000 {method 'stride' of 'torch._C.TensorBase' objects}
+       72    0.000    0.000    0.000    0.000 {built-in method _thread._set_sentinel}
+      295    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:361(_get_comet_logger)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:1269(__init__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/decorators.py:57(disable)
+      180    0.000    0.000    0.000    0.000 {method 'storage_offset' of 'torch._C.TensorBase' objects}
+      217    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+      104    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:1229(_pickle_storage_type)
+      8/1    0.000    0.000    0.000    0.000 <frozen abc>:121(__subclasscheck__)
+       70    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/connection.py:118(__init__)
+      106    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/synchronize.py:90(_make_methods)
+      8/1    0.000    0.000    0.000    0.000 {built-in method _abc._abc_subclasscheck}
+       76    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+      180    0.000    0.000    0.000    0.000 {method 'has_names' of 'torch._C.TensorBase' objects}
+        5    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:166(_type_convert)
+      187    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:601(is_set)
+       72    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1356(_make_invoke_excepthook)
+      181    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+    392/2    0.015    0.000    0.000    0.000 {method 'poll' of 'select.poll' objects}
+       70    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+      104    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:892(__init__)
+       36    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1251(daemon)
+      258    0.000    0.000    0.000    0.000 {built-in method builtins.divmod}
+        2    0.000    0.000    0.000    0.000 /home/ayanami/code/pharos-HARL/harl/envs/pharos/pharos_logger.py:59(eval_log)
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/utils/hooks.py:83(warn_if_has_hooks)
+      180    0.000    0.000    0.000    0.000 {method '__getstate__' of 'object' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.compile}
+      106    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+      393    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/selectors.py:199(__enter__)
+      294    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:115(get_logdir)
+       72    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1042(_set_native_id)
+       16    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+       36    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/queues.py:214(_finalize_join)
+       64    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/concurrent/futures/thread.py:23(_python_exit)
+      159    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+       16    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:882(_check_save_filelike)
+       25    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/optim/optimizer.py:216(_get_scalar_dtype)
+       76    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:686(_decr_instances)
+      150    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/_ufunc_config.py:430(__init__)
+       83    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+       36    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:839(_newname)
+       71    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+       84    0.000    0.000    0.000    0.000 {method 'remove' of 'set' objects}
+       50    0.000    0.000    0.000    0.000 {method 'dim' of 'torch._C.TensorBase' objects}
+       42    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1157(__hash__)
+       32    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:715(_is_path)
+       21    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/json/encoder.py:260(_make_iterencode)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:679(_get_free_pos)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:213(__init__)
+      104    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/weakref.py:461(items)
+       35    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/writer.py:107(cleanup)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:333(_screen_shape_linux)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/code/pharos-HARL/examples/train.py:104(save_profile)
+        1    0.000    0.000    0.000    0.000 {built-in method torch._C._get_operation_overload}
+       54    0.000    0.000    0.000    0.000 {method 'flush' of '_io.TextIOWrapper' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:709(__call__)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/code/pharos-HARL/harl/common/base_logger.py:113(eval_init)
+       83    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:17(__init__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/code/pharos-HARL/harl/common/base_logger.py:182(close)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_ops.py:657(__init__)
+       13    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:1215(__setattr__)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/typing_extensions.py:3473(_collect_parameters)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+      106    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/context.py:197(get_start_method)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:438(status_printer)
+      102    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/util.py:44(sub_debug)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/signal.py:56(signal)
+       72    0.000    0.000    0.000    0.000 {built-in method _thread.get_native_id}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:706(__init__)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:1174(__init__)
+       37    0.000    0.000    0.000    0.000 {built-in method atexit.register}
+      180    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:58(__init__)
+       50    0.000    0.000    0.000    0.000 /home/ayanami/code/pharos-HARL/harl/common/base_logger.py:39(episode_init)
+        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.TextIOWrapper' objects}
+       72    0.000    0.000    0.000    0.000 {built-in method _thread.daemon_threads_allowed}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_ops.py:1009(_has_script_object_arg)
+        6    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:730(<genexpr>)
+       36    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/context.py:237(get_context)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:402(__init__)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:345(_remove_dups_flatten)
+       40    0.000    0.000    0.000    0.000 {method 'locked' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1286(fp_write)
+       52    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:112(__format__)
+      105    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/context.py:187(get_context)
+       52    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:108(__init__)
+      106    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/process.py:37(current_process)
+       16    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:1185(PyTorchPickler)
+       50    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:949(_nanmean_dispatcher)
+       36    0.000    0.000    0.000    0.000 {method 'clear' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method fcntl.ioctl}
+       52    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:167(colour)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/_weakrefset.py:110(remove)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/functools.py:35(update_wrapper)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/typing_extensions.py:3388(_has_generic_or_protocol_as_origin)
+       13    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:1161(_is_dunder)
+       16    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:858(_check_dill_version)
+        1    0.000    0.000    0.000    0.000 {built-in method torch._C._get_schema}
+       30    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/process.py:99(_check_closed)
+       21    0.000    0.000    0.000    0.000 <frozen codecs>:186(__init__)
+       50    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:2472(_any_dispatcher)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:187(disable_on_exception)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:156(__init__)
+       50    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1899(_nanstd_dispatcher)
+       25    0.000    0.000    0.000    0.000 {built-in method torch.get_default_dtype}
+       52    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:163(colour)
+       30    0.000    0.000    0.000    0.000 {built-in method posix.waitstatus_to_exitcode}
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_ops.py:1010(<genexpr>)
+        7    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/code/pharos-HARL/harl/common/base_logger.py:30(init)
+       17    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:962(__eq__)
+        3    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:354(innermost_fn)
+       50    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1709(_nanvar_dispatcher)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:857(_maintain_shutdown_locks)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/signal.py:36(_enum_to_int)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:557(_dtype_to_storage_type_map)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:317(_deduplicate)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:266(_supports_unicode)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/functools.py:396(__get__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/storage.py:536(_new_dtypes)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/weakref.py:387(_commit_removals)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:125(__eq__)
+        3    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:152(wrapper_setattr)
+        1    0.000    0.000    0.000    0.000 {built-in method fromtimestamp}
+       16    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:720(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method _signal.signal}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/typing_extensions.py:3410(_is_unpacked_typevartuple)
+        2    0.000    0.000    0.000    0.000 {built-in method fromkeys}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:252(_is_utf)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:222(__eq__)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:139(__getattr__)
+       16    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/serialization.py:723(__enter__)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1153(_comparable)
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:971(__hash__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_ops.py:49(__init__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/signal.py:24(_int_to_enum)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1390(_handle_fromlist)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/_monitor.py:94(report)
+        3    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:226(__init__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:2344(get_origin)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/functools.py:65(wraps)
+        6    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:1273(<genexpr>)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/comet_utils.py:18(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'difference' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1147(__del__)
+        2    0.000    0.000    0.000    0.000 {built-in method _weakref.proxy}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1198(ident)
+        2    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        1    0.000    0.000    0.000    0.000 {method 'difference_update' of 'set' objects}
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/typing.py:494(__repr__)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/utils.py:282(_screen_shape_wrapper)
+        1    0.000    0.000    0.000    0.000 {method 'clear' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/inspect.py:302(isclass)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.hash}
+        2    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3047(_max_dispatcher)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:346(nothing)
+        1    0.000    0.000    0.000    0.000 /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tqdm/std.py:1301(<lambda>)
+     54/0    0.000    0.000    0.000          /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1058(_bootstrap_inner)
+     22/0    0.000    0.000    0.000          /home/ayanami/miniconda3/envs/rl/lib/python3.12/site-packages/tensorboardX/event_file_writer.py:191(run)
+     33/0    0.000    0.000    0.000          /home/ayanami/miniconda3/envs/rl/lib/python3.12/multiprocessing/queues.py:231(_feed)
+     50/0    0.000    0.000    0.000          /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1018(_bootstrap)
+     33/0    0.001    0.000    0.000          /home/ayanami/miniconda3/envs/rl/lib/python3.12/threading.py:1001(run)
+
+

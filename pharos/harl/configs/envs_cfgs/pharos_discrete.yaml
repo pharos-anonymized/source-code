@@ -1,0 +1,20 @@
+env_name: pharos_discrete
+tracing_in_eval: True
+stage_name: stage1  # 训练阶段名称, 随意设计
+closer_factor: 10.0  # 速度奖励系数
+collision_factor: 1000.0  # 重叠惩罚系数, >= 1 * reach finally
+reach_factor: 30  # 到达目标的奖励系数
+N_Agents: 10  # 训练时的agent数量
+N_Humans: 8
+Scare_Factor: 25.0  # 恐惧因子, * 1/r * (1 + cos) * max(0, cos)
+Cutoff_Scare_Distance: 5.0  # cube, 超过这个距离就不考虑恐惧因子
+Communication_Delta_Time: 100  # ms
+Cube_Len: 1.0  # 每个小立方体的边长(m)
+World_Min_Bound_Cube: [0, 0, 0]
+World_Max_Bound_Cube: [30, 10, 30]
+Agent_Max_Step_Cube: 2  # 每次通信最多移动X-1个Min_Cube_Len
+enable_buildings: True  # 是否启用建筑物
+enable_human_fear: True  # 是否启用人类恐惧因子
+eval_max_timestamp: 200  # 评估时的最久耗时(如果到达目标会继续生成新目标, 并且可能有不可达目标, 所以需要最久耗时), 单位ms
+action_discrete: True  # 是否使用离散动作空间
+building_data: "train" # 读取 {building_data}_buildings.csv 中的建筑物数据

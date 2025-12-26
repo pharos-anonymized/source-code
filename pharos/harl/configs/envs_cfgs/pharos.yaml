@@ -1,0 +1,25 @@
+env_name: pharos
+tracing_in_eval: True
+stage_name: "stage1"  # 训练阶段名称, 随意设计
+closer_factor: 10.0  # 速度奖励系数
+collision_factor: 1000.0  # 重叠惩罚系数, >= 1 * reach finally
+reach_factor: 30  # 到达目标的奖励系数
+N_Agents: 10  # 训练时的agent数量
+N_Humans: 8
+Human_Height: 1.37
+Human_Mean_Speed: 1.34
+Human_Std_Speed: 0.37
+Agent_Max_Speed: 10.0  # m/s, agent的最大速度
+Scare_Factor: 25.0  # 恐惧因子, * 1/r * (1 + cos(vv)) * max(0, cos(rv))
+# 大致来说需要  s / r_min * 2 = reach_factor, s = reach_factor * r_min / 2
+# 同时, s / cutoff * 1 ~ closer_factor
+Cutoff_Scare_Distance: 5.0  # m , 超过这个距离就不考虑恐惧因子
+Communication_Delta_Time: 0.1  # s
+World_Min_Bound: [0, 0, 0]
+World_Max_Bound: [30, 10, 30]
+enable_buildings: True  # 是否启用建筑物
+enable_human_fear: True  # 是否启用人类恐惧因子
+eval_max_timestamp: 200  # 评估时的最大通信次数(如果到达目标会继续生成新目标, 并且可能有不可达目标, 所以需要截断), 单位delta_t
+building_data: "train"  # 读取 {building_data}_buildings.csv 中的建筑物数据
+Cube_Min_Half_Length: 0.25  # 安全空间的最小半边长(飞机自身体积) 0.25
+nearby_agents_num: 5  # 观察时考虑的附近的agent数量
